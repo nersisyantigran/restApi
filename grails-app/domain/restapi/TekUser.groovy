@@ -4,11 +4,12 @@ class TekUser {
     String firstName
     String lastName
 
-//    static mappings = {
-//        "/album/$id?"(controller:"album") {
-//            action = [GET:'show', PUT:'save', POST:'update', DELETE:'delete']
-//        }
-//    }
+    static mappings = {
+        "/TekUser/$id?"(controller:"tekUser") {
+            action = [GET:'show', PUT:'save', POST:'update', DELETE:'delete']
+            format = "json"
+        }
+    }
     static constraints = {
     }
 }
